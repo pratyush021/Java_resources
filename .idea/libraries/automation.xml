@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="automation">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/automation.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
