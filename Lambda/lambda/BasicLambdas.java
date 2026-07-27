@@ -7,7 +7,6 @@ interface I {
 
 public class BasicLambdas {
 
-
     public static void main(String[] args) {
         I i = () -> System.out.println("Lambda version");
         i.m();
