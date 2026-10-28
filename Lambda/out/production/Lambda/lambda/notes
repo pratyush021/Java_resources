@@ -1,0 +1,29 @@
+Interface defines a contract for what a class can do, without saying anything about what the class should do.
+The class signs the contract with the keyword 'implements'
+
+if a concrete(non-abstract)class is implementing an interface, the compiler will ensure that the class has implementation code for each
+abstract method.
+
+As of java 8, it is possible to inherit concrete methods from interfaces. And interfaces can contain two types
+of concrete methods i.e. static and default.
+    1. Implementation class are not required to implement concrete methods.
+    2. The 'default' interface methods are inheritable, while the static interface methods are not.
+
+All the interfaces methods are implicitly public.
+All interface methods are implicitly abstract.
+    - unless they are default or static, i.e. concrete
+
+All variables declared in an interface must be public, static and final i.e. interfaces can only declare constants
+but not instance variables.
+
+As with abstract classes, you can not 'new' an interface, but they can be used as references.
+
+Printable p = new Printer(); //Printable is an interface.
+    In this case, the class Printer implements Printable interface.
+
+Functional interface is an interface that has only one abstract method, also called SAM(Single Abstract Method)
+    - default/static methods do not count
+    - method inherited from objects do not count
+
+A lambda only works with functional interfaces.
+Lambda is an instance of a class that implements a functional interface.
